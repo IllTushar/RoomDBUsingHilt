@@ -19,6 +19,7 @@ class viewModel @Inject constructor(private val repo: UserRepo) : ViewModel() {
         }
     }
 
+
     fun deleteUser(user: RoomEntities) {
         viewModelScope.launch {
             repo.deleteUser(user)
