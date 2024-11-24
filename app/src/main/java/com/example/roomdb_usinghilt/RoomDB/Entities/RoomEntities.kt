@@ -9,4 +9,5 @@ data class RoomEntities(
     val id: Int = 0,
     val name: String,
     val email: String,
+    val isActive: Int,
 )

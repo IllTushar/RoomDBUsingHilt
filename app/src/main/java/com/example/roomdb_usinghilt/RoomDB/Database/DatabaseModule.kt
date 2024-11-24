@@ -21,7 +21,8 @@ object DatabaseModule {
             context,
             UserDatabase::class.java,
             UserDatabase.DATABASE_NAME
-        ).build()
+        ).addMigrations(UserDatabase.db_migration_1_2)
+            .build()
     }
 
     @Provides

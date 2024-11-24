@@ -82,7 +82,7 @@ It ensures that the ViewModel is lifecycle-aware and scoped to the lifecycle of 
             if (Name.isBlank() || Email.isBlank()) {
                 bottomSheet.dismiss()
             } else {
-                val table = RoomEntities(name = Name, email = Email)
+                val table = RoomEntities(name = Name, email = Email, isActive = 1)
                 viewModel.addUser(table)
                 bottomSheet.dismiss()
                 getAllUser()
